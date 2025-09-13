@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Assignment</h1>
+    </header>
+    <main>
+        <!-- Light/Dark Mode Toggle -->
+        <section id="theme-section">
+            <button id="toggle-theme">Switch to Dark Mode</button>
+        </section>
+
+        <!-- Counter Feature -->
+        <section id="counter-section">
+            <h2>Counter Game</h2>
+            <button id="decrement">-</button>
+            <span id="counter-value">0</span>
+            <button id="increment">+</button>
+        </section>
+
+        <!-- Collapsible FAQ -->
+        <section id="faq-section">
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <button class="faq-question">What is this assignment about?</button>
+                <div class="faq-answer">It's about building interactive web pages using JavaScript events and DOM manipulation.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Do I need to use CSS?</button>
+                <div class="faq-answer">CSS is optional but encouraged for better user experience.</div>
+            </div>
+        </section>
+
+        <!-- Form with Validation -->
+        <section id="form-section">
+            <h2>Sign Up Form</h2>
+            <form id="signup-form" novalidate>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error" id="name-error"></span>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="email-error"></span>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <span class="error" id="password-error"></span>
+
+                <button type="submit">Sign Up</button>
+                <span class="success" id="form-success"></span>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

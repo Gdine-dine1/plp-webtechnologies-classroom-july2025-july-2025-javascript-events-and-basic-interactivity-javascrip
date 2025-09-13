@@ -1,0 +1,74 @@
+/* style.css - Optional styling for interactive elements */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+#toggle-theme {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+}
+.dark-mode {
+    background: #222;
+    color: #f4f4f4;
+}
+.dark-mode main {
+    background: #333;
+    color: #f4f4f4;
+}
+#counter-section button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+}
+.faq-item {
+    margin-bottom: 1rem;
+}
+.faq-answer {
+    display: none;
+    margin-top: 0.5rem;
+    background: #eee;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+.faq-answer.show {
+    display: block;
+}
+label {
+    display: block;
+    margin-top: 1rem;
+}
+input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    box-sizing: border-box;
+}
+button[type="submit"] {
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+}
+.error {
+    color: #d00;
+    font-size: 0.9em;
+}
+.success {
+    color: #080;
+    font-size: 1em;
+    margin-left: 1rem;
+}
